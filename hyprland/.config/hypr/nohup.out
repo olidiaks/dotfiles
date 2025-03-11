@@ -1,0 +1,45 @@
+[2025-03-07 23:46:58.807] [info] Using configuration file /home/olidiaks/.config/waybar/config.jsonc
+[2025-03-07 23:46:58.811] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Brak interfejsu „org.freedesktop.portal.Settings” w obiekcie w ścieżce /org/freedesktop/portal/desktop
+[2025-03-07 23:46:58.811] [info] Using CSS file /home/olidiaks/.config/waybar/style.css
+[2025-03-07 23:46:58.827] [warning] module : Unknown module: 
+
+** (waybar:109365): WARNING **: 23:46:58.871: Status Notifier Item with bus name ':1.22' and object path '/org/ayatana/NotificationItem/udiskie' is already registered
+
+** (waybar:109365): WARNING **: 23:46:58.871: Status Notifier Item with bus name ':1.10' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-03-07 23:46:58.881] [warning] Requested height: 31 is less than the minimum height: 32 required by the modules
+[2025-03-07 23:46:58.881] [info] Bar configured (width: 1920, height: 32) for output: eDP-1
+
+** (waybar:109365): WARNING **: 23:47:00.546: Status Notifier Item with bus name ':1.10' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:109365): WARNING **: 23:47:00.546: Status Notifier Item with bus name ':1.22' and object path '/org/ayatana/NotificationItem/udiskie' is already registered
+[2025-03-07 23:56:12.209] [info] Using configuration file /home/olidiaks/.config/waybar/config.jsonc
+[2025-03-07 23:56:12.211] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Brak interfejsu „org.freedesktop.portal.Settings” w obiekcie w ścieżce /org/freedesktop/portal/desktop
+[2025-03-07 23:56:12.211] [info] Using CSS file /home/olidiaks/.config/waybar/style.css
+[2025-03-07 23:56:12.226] [warning] module : Unknown module: 
+
+** (waybar:120507): WARNING **: 23:56:12.271: Status Notifier Item with bus name ':1.22' and object path '/org/ayatana/NotificationItem/udiskie' is already registered
+
+** (waybar:120507): WARNING **: 23:56:12.271: Status Notifier Item with bus name ':1.10' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-03-07 23:56:12.279] [warning] Requested height: 31 is less than the minimum height: 32 required by the modules
+[2025-03-07 23:56:12.279] [info] Bar configured (width: 1920, height: 32) for output: eDP-1
+
+** (waybar:120507): WARNING **: 23:56:13.533: Status Notifier Item with bus name ':1.22' and object path '/org/ayatana/NotificationItem/udiskie' is already registered
+
+** (waybar:120507): WARNING **: 23:56:13.533: Status Notifier Item with bus name ':1.10' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:120507): WARNING **: 00:09:09.340: Status Notifier Item with bus name ':1.22' and object path '/org/ayatana/NotificationItem/udiskie' is already registered
+
+** (waybar:120507): WARNING **: 00:09:09.340: Status Notifier Item with bus name ':1.10' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+(waybar:120507): LIBDBUSMENU-GLIB-WARNING **: 00:12:06.068: Unable to replace properties on 0: Error getting properties for ID
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/gi/_ossighelper.py", line 93, in signal_notify
+    def signal_notify(source, condition):
+    
+  File "/home/olidiaks/.local/share/bin/mediaplayer.py", line 20, in signal_handler
+    sys.stdout.flush()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/olidiaks/.local/share/bin/mediaplayer.py", line 20, in signal_handler
+    sys.stdout.flush()
+    ~~~~~~~~~~~~~~~~^^
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stdout>'>
