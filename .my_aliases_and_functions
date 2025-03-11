@@ -1,0 +1,81 @@
+open(){
+	xdg-open "$(find -type f | fzf)"
+}
+
+fcd(){
+	cd "$(find -type d | fzf)"
+	exa --icons -axGn
+}
+
+fmv(){
+	mv "$(find -type f | fzf)" "$(find -type d | fzf)" -vn
+}
+
+fcp(){
+	cp "$(find -type f | fzf)" "$(find -type d | fzf)" -rv
+}
+
+frm(){
+	rm -rvf "$(find -type f | fzf | sed 's/^..//g' | tr -d '\n')"
+}
+
+fnvim(){
+	nvim "$(find -type f | fzf)"
+}
+
+fzathura(){
+  nohup zathura "$(find . -name '*.pdf' | fzf)" > /dev/null 
+}
+
+alias blaszakwakeup="wakeonlan 2C:F0:5D:74:3E:0D"
+alias du="du -h"
+alias cls="clear"
+alias ..="cd .."
+alias cd..="cd .."
+alias cp="cp -rv"
+alias mkdir="mkdir -pv"
+alias rm="rm -rfv"
+alias l="exa --icons -axG"
+alias ll="exa --icons -liah --color=auto"
+alias lsl="exa  -lhFA | less"
+alias ga="git add"
+alias gaa='git add -A'
+alias gac='git add -A && git commit'
+alias gaca='git add -A && git commit --amend'
+alias gl='git log'
+alias glg='git log --graph'
+alias gs='git status'
+alias gsw='git switch'
+alias gswc='git switch -c'
+alias gr="git rebase"
+alias gri="git rebase -i"
+alias gd="git diff"
+alias gp="git pull && git push"
+alias getpatch="find -type f | fzf | sed 's/^..//g' | tr -d '\n' | xclip -selection c"
+alias untar="tar xvf"
+alias zip="zip -r"
+alias mv="mv -vn"
+
+alias c='clear' # clear terminal
+alias l='eza -a --icons=auto' # short list
+alias ls='eza -lh --icons=auto' # long list
+alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
+alias ld='eza -lhD --icons=auto' # long list dirs
+alias lt='eza --icons=auto --tree' # list folder as tree
+alias un='$aurhelper -Rns' # uninstall package
+alias up='$aurhelper -Syu' # update system/package/aur
+alias pl='$aurhelper -Qs' # list installed package
+alias pa='$aurhelper -Ss' # list available package
+alias pc='$aurhelper -Sc' # remove unused cache
+alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -'
+alias vc='code' # gui code editor
+alias v='nvim'
+
+# Directory navigation shortcuts
+alias cd..='cd ..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+
